@@ -3,14 +3,14 @@ type: source
 domains:
   - persistence-data
   - concurrency-consistency
-status: seed
+status: learning
 level: 0
 confidence: low
 prerequisites: []
 related_projects: []
 related_sources: []
-last_reviewed:
-next_review:
+last_reviewed: 2026-08-13
+next_review: 2026-08-14
 created: 2026-08-13
 updated: 2026-08-13
 ---
@@ -28,6 +28,10 @@ connection·lock·index·buffer pool의 내부 동작과 지표가 필요할 때
 ## 장·절 또는 섹션 찾기 규칙
 
 현재 질문의 핵심 용어를 목차에서 찾고, `읽을 위치 → 답할 질문 → 완료 증거`를 세트로 기록한다. 처음부터 순서대로 완독하지 않는다.
+
+## 읽기 진행
+
+- [[01-1.2 왜 MySQL인가]] — DBMS 선택 기준: 안정성 → 성능과 기능 → 커뮤니티와 인지도
 
 ## 완료 증거
 
