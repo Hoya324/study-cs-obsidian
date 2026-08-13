@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "moc",
+      "type": "file",
+      "x": 0,
+      "y": 120,
+      "width": 470,
+      "height": 520,
+      "file": "01-maps/domains/02 Java와 JVM.md",
+      "color": "5"
+    },
+    {
+      "id": "branch-1",
+      "type": "text",
+      "x": 600,
+      "y": 0,
+      "width": 400,
+      "height": 100,
+      "text": "## JVM 메모리와 GC",
+      "color": "1"
+    },
+    {
+      "id": "branch-2",
+      "type": "text",
+      "x": 600,
+      "y": 140,
+      "width": 400,
+      "height": 100,
+      "text": "## Java 스레드와 동시성",
+      "color": "2"
+    },
+    {
+      "id": "branch-3",
+      "type": "text",
+      "x": 600,
+      "y": 280,
+      "width": 400,
+      "height": 100,
+      "text": "## 객체 메모리와 컬렉션",
+      "color": "3"
+    },
+    {
+      "id": "branch-4",
+      "type": "text",
+      "x": 600,
+      "y": 420,
+      "width": 400,
+      "height": 100,
+      "text": "## 클래스 로딩과 바이트코드",
+      "color": "4"
+    },
+    {
+      "id": "branch-5",
+      "type": "text",
+      "x": 600,
+      "y": 560,
+      "width": 400,
+      "height": 100,
+      "text": "## Virtual Thread",
+      "color": "5"
+    },
+    {
+      "id": "branch-6",
+      "type": "text",
+      "x": 600,
+      "y": 700,
+      "width": 400,
+      "height": 100,
+      "text": "## JVM 관측과 튜닝",
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-1",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-2",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-3",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-4",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-5",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-6",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    }
+  ]
+}

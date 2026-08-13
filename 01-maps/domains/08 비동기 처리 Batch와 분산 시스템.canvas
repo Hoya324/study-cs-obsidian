@@ -1,0 +1,142 @@
+{
+  "nodes": [
+    {
+      "id": "moc",
+      "type": "file",
+      "x": 0,
+      "y": 120,
+      "width": 470,
+      "height": 520,
+      "file": "01-maps/domains/08 비동기 처리 Batch와 분산 시스템.md",
+      "color": "5"
+    },
+    {
+      "id": "branch-1",
+      "type": "text",
+      "x": 600,
+      "y": 0,
+      "width": 400,
+      "height": 100,
+      "text": "## 메시징과 전달 보장",
+      "color": "1"
+    },
+    {
+      "id": "branch-2",
+      "type": "text",
+      "x": 600,
+      "y": 140,
+      "width": 400,
+      "height": 100,
+      "text": "## Batch Chunk와 재시작",
+      "color": "2"
+    },
+    {
+      "id": "branch-3",
+      "type": "text",
+      "x": 600,
+      "y": 280,
+      "width": 400,
+      "height": 100,
+      "text": "## 키셋 페이징",
+      "color": "3"
+    },
+    {
+      "id": "branch-4",
+      "type": "text",
+      "x": 600,
+      "y": 420,
+      "width": 400,
+      "height": 100,
+      "text": "## Outbox와 상태 전이",
+      "color": "4"
+    },
+    {
+      "id": "branch-5",
+      "type": "text",
+      "x": 600,
+      "y": 560,
+      "width": 400,
+      "height": 100,
+      "text": "## 부분 실패",
+      "color": "5"
+    },
+    {
+      "id": "branch-6",
+      "type": "text",
+      "x": 600,
+      "y": 700,
+      "width": 400,
+      "height": 100,
+      "text": "## 파티셔닝과 병렬 처리",
+      "color": "6"
+    },
+    {
+      "id": "branch-7",
+      "type": "text",
+      "x": 600,
+      "y": 840,
+      "width": 400,
+      "height": 100,
+      "text": "## DLQ·retry·skip",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-1",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-2",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-3",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-4",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-5",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-6",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-7",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "branch-7",
+      "toSide": "left",
+      "label": "연결해 설명한다"
+    }
+  ]
+}
