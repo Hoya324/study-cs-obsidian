@@ -1,7 +1,7 @@
 filters:
   and:
     - file.hasProperty("next_review")
-    - 'next_review != null'
+    - next_review != null
     - '!file.inFolder("08-templates")'
 views:
   - type: table

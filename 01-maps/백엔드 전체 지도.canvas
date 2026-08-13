@@ -1,214 +1,28 @@
 {
-  "nodes": [
-    {
-      "id": "stage-1",
-      "type": "text",
-      "x": 0,
-      "y": 0,
-      "width": 230,
-      "height": 100,
-      "text": "## 요구사항·클라이언트",
-      "color": "5"
-    },
-    {
-      "id": "stage-2",
-      "type": "text",
-      "x": 340,
-      "y": 0,
-      "width": 230,
-      "height": 100,
-      "text": "## 네트워크·엣지",
-      "color": "5"
-    },
-    {
-      "id": "stage-3",
-      "type": "text",
-      "x": 680,
-      "y": 0,
-      "width": 230,
-      "height": 100,
-      "text": "## Linux·JVM·Tomcat",
-      "color": "5"
-    },
-    {
-      "id": "stage-4",
-      "type": "text",
-      "x": 1020,
-      "y": 0,
-      "width": 230,
-      "height": 100,
-      "text": "## Spring 애플리케이션",
-      "color": "5"
-    },
-    {
-      "id": "stage-5",
-      "type": "text",
-      "x": 1360,
-      "y": 0,
-      "width": 230,
-      "height": 100,
-      "text": "## DB·Redis·외부 시스템",
-      "color": "5"
-    },
-    {
-      "id": "stage-6",
-      "type": "text",
-      "x": 1700,
-      "y": 0,
-      "width": 230,
-      "height": 100,
-      "text": "## 응답·오류",
-      "color": "5"
-    },
-    {
-      "id": "stage-7",
-      "type": "text",
-      "x": 2040,
-      "y": 0,
-      "width": 230,
-      "height": 100,
-      "text": "## 운영 관측",
-      "color": "5"
-    },
-    {
-      "id": "domain-1",
-      "type": "file",
-      "x": 0,
-      "y": 260,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/01 컴퓨터 구조와 운영체제.md",
-      "color": "1"
-    },
-    {
-      "id": "domain-2",
-      "type": "file",
-      "x": 610,
-      "y": 260,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/02 Java와 JVM.md",
-      "color": "2"
-    },
-    {
-      "id": "domain-3",
-      "type": "file",
-      "x": 1220,
-      "y": 260,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/03 네트워크 HTTP 웹 서버와 스레드 풀.md",
-      "color": "3"
-    },
-    {
-      "id": "domain-4",
-      "type": "file",
-      "x": 0,
-      "y": 610,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/04 Spring 내부 원리와 애플리케이션 설계.md",
-      "color": "4"
-    },
-    {
-      "id": "domain-5",
-      "type": "file",
-      "x": 610,
-      "y": 610,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/05 JDBC JPA RDBMS와 MySQL.md",
-      "color": "5"
-    },
-    {
-      "id": "domain-6",
-      "type": "file",
-      "x": 1220,
-      "y": 610,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/06 리소스 성능과 부하.md",
-      "color": "6"
-    },
-    {
-      "id": "domain-7",
-      "type": "file",
-      "x": 0,
-      "y": 960,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/07 동시성 트랜잭션과 데이터 정합성.md",
-      "color": "1"
-    },
-    {
-      "id": "domain-8",
-      "type": "file",
-      "x": 610,
-      "y": 960,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/08 비동기 처리 Batch와 분산 시스템.md",
-      "color": "2"
-    },
-    {
-      "id": "domain-9",
-      "type": "file",
-      "x": 1220,
-      "y": 960,
-      "width": 540,
-      "height": 280,
-      "file": "01-maps/domains/09 배포 클라우드 관측 장애 대응 보안과 테스트.md",
-      "color": "3"
-    }
-  ],
-  "edges": [
-    {
-      "id": "flow-1",
-      "fromNode": "stage-1",
-      "fromSide": "right",
-      "toNode": "stage-2",
-      "toSide": "left",
-      "label": "요청이 흐른다"
-    },
-    {
-      "id": "flow-2",
-      "fromNode": "stage-2",
-      "fromSide": "right",
-      "toNode": "stage-3",
-      "toSide": "left",
-      "label": "요청이 흐른다"
-    },
-    {
-      "id": "flow-3",
-      "fromNode": "stage-3",
-      "fromSide": "right",
-      "toNode": "stage-4",
-      "toSide": "left",
-      "label": "요청이 흐른다"
-    },
-    {
-      "id": "flow-4",
-      "fromNode": "stage-4",
-      "fromSide": "right",
-      "toNode": "stage-5",
-      "toSide": "left",
-      "label": "요청이 흐른다"
-    },
-    {
-      "id": "flow-5",
-      "fromNode": "stage-5",
-      "fromSide": "right",
-      "toNode": "stage-6",
-      "toSide": "left",
-      "label": "요청이 흐른다"
-    },
-    {
-      "id": "flow-6",
-      "fromNode": "stage-6",
-      "fromSide": "right",
-      "toNode": "stage-7",
-      "toSide": "left",
-      "label": "요청이 흐른다"
-    }
-  ]
+	"nodes":[
+		{"id":"stage-1","type":"text","x":0,"y":0,"width":230,"height":100,"text":"## 요구사항·클라이언트","color":"5"},
+		{"id":"stage-2","type":"text","x":340,"y":0,"width":230,"height":100,"text":"## 네트워크·엣지","color":"5"},
+		{"id":"stage-3","type":"text","x":680,"y":0,"width":230,"height":100,"text":"## Linux·JVM·Tomcat","color":"5"},
+		{"id":"stage-4","type":"text","x":1020,"y":0,"width":230,"height":100,"text":"## Spring 애플리케이션","color":"5"},
+		{"id":"stage-5","type":"text","x":1360,"y":0,"width":230,"height":100,"text":"## DB·Redis·외부 시스템","color":"5"},
+		{"id":"stage-6","type":"text","x":1700,"y":0,"width":230,"height":100,"text":"## 응답·오류","color":"5"},
+		{"id":"stage-7","type":"text","x":2040,"y":0,"width":230,"height":100,"text":"## 운영 관측","color":"5"},
+		{"id":"domain-1","type":"file","x":0,"y":260,"width":540,"height":280,"file":"01-maps/domains/01 컴퓨터 구조와 운영체제.md","color":"1"},
+		{"id":"domain-2","type":"file","x":610,"y":260,"width":540,"height":280,"file":"01-maps/domains/02 Java와 JVM.md","color":"2"},
+		{"id":"domain-3","type":"file","x":1220,"y":260,"width":540,"height":280,"file":"01-maps/domains/03 네트워크 HTTP 웹 서버와 스레드 풀.md","color":"3"},
+		{"id":"domain-4","type":"file","x":0,"y":610,"width":540,"height":280,"file":"01-maps/domains/04 Spring 내부 원리와 애플리케이션 설계.md","color":"4"},
+		{"id":"domain-5","type":"file","x":610,"y":610,"width":540,"height":280,"file":"01-maps/domains/05 JDBC JPA RDBMS와 MySQL.md","color":"5"},
+		{"id":"domain-6","type":"file","x":1220,"y":610,"width":540,"height":280,"file":"01-maps/domains/06 리소스 성능과 부하.md","color":"6"},
+		{"id":"domain-7","type":"file","x":0,"y":960,"width":540,"height":280,"file":"01-maps/domains/07 동시성 트랜잭션과 데이터 정합성.md","color":"1"},
+		{"id":"domain-8","type":"file","x":610,"y":960,"width":540,"height":280,"file":"01-maps/domains/08 비동기 처리 Batch와 분산 시스템.md","color":"2"},
+		{"id":"domain-9","type":"file","x":1220,"y":960,"width":540,"height":280,"file":"01-maps/domains/09 배포 클라우드 관측 장애 대응 보안과 테스트.md","color":"3"}
+	],
+	"edges":[
+		{"id":"flow-1","fromNode":"stage-1","fromSide":"right","toNode":"stage-2","toSide":"left","label":"요청이 흐른다"},
+		{"id":"flow-2","fromNode":"stage-2","fromSide":"right","toNode":"stage-3","toSide":"left","label":"요청이 흐른다"},
+		{"id":"flow-3","fromNode":"stage-3","fromSide":"right","toNode":"stage-4","toSide":"left","label":"요청이 흐른다"},
+		{"id":"flow-4","fromNode":"stage-4","fromSide":"right","toNode":"stage-5","toSide":"left","label":"요청이 흐른다"},
+		{"id":"flow-5","fromNode":"stage-5","fromSide":"right","toNode":"stage-6","toSide":"left","label":"요청이 흐른다"},
+		{"id":"flow-6","fromNode":"stage-6","fromSide":"right","toNode":"stage-7","toSide":"left","label":"요청이 흐른다"}
+	]
 }

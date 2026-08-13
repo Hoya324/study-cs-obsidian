@@ -22,7 +22,7 @@ views:
     name: 학습 중
     filters:
       and:
-        - 'status == "learning"'
+        - status == "learning"
     order:
       - file.name
       - domains
