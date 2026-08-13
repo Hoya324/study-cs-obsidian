@@ -21,7 +21,7 @@ updated: 2026-08-13
 
 ## level 근거
 
-level 1 → 2. “`SET`은 기동 중인 MySQL instance에서만 유효”하고 “`SET PERSIST`는 `mysqld-auto.cnf`에 기록해 재시작 때 적용”된다고 runtime과 persistence의 상태 전이를 설명했다. `SET PERSIST`의 즉시 GLOBAL 변경과 파일 간 우선순위는 보완 설명으로 추가했다.
+level 2 유지. “mysqld-auto.cnf에 있는값으로 변경되지 않을까? set persist 한 값이 거기로 저장된거니까”라고 persisted 값의 저장 위치와 재시작 후 우선 적용을 연결했다. 예상과 실제값이 다를 때 확인할 지표와 설정 출처 조회는 아직 답하지 않았다.
 
 ## 한 문장 정의
 
@@ -87,7 +87,7 @@ level 1 → 2. “`SET`은 기동 중인 MySQL instance에서만 유효”하고
 
 ## 아직 답하지 못한 질문
 
-- [[SET PERSIST는 my.cnf를 수정하는가]]
+- `my.cnf`를 바꿨는데 실제값이 다를 때 현재값과 설정 출처를 어떻게 확인하는가?
 - 배포 환경에서 `my.cnf`와 persisted setting 중 무엇을 source of truth로 삼을 것인가?
 
 ## 학습 자료

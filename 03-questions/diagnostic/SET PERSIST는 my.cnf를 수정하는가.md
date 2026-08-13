@@ -36,6 +36,16 @@ updated: 2026-08-13
 
 일반 `SET`과 persisted 설정의 수명을 정확히 구분했다. 다만 `SET PERSIST`가 현재 GLOBAL 값도 즉시 바꾼다는 점, `PERSIST_ONLY`, `RESET PERSIST`와 file precedence는 빠져 있었다.
 
+## 설정 우선순위 답변 원문
+
+> mysqld-auto.cnf에 있는값으로 변경되지 않을까? set persist 한 값이 거기로 저장된거니까
+
+## 설정 우선순위 진단
+
+맞다. `SET PERSIST`로 저장한 값이 `mysqld-auto.cnf`에 있고, 서버가 일반 option file 뒤에 persisted variable을 처리한다는 인과를 연결했다.
+
+정확히는 `persisted_globals_load=ON`으로 시작해 persisted 값을 읽는 경우에 해당한다. 이를 `OFF`로 시작하면 `mysqld-auto.cnf`의 persisted 값은 적용되지 않는다.
+
 ## 관련 개념과 프로젝트
 
 - [[MySQL SET PERSIST와 설정 우선순위]]
@@ -52,6 +62,8 @@ updated: 2026-08-13
 
 `SET GLOBAL`은 현재 server의 global runtime 값만 바꾸고 파일은 수정하지 않는다. `SET PERSIST`는 현재 global runtime 값을 즉시 바꾸면서 `DATADIR/mysqld-auto.cnf`에도 기록한다. `SET PERSIST_ONLY`는 현재값을 바꾸지 않고 다음 시작용 값만 기록한다. 어느 명령도 `my.cnf`를 직접 수정하지 않는다. persisted entry는 `RESET PERSIST`로 제거하며, 제거해도 현재 runtime 값은 자동 원복되지 않는다.
 
+같은 dynamic system variable이 `my.cnf`와 `mysqld-auto.cnf`에 서로 다르게 설정돼 있고 persisted 설정 로딩이 활성화돼 있다면, 나중에 처리되는 `mysqld-auto.cnf`의 값이 최종 runtime 값이 된다.
+
 ## 다음 꼬리 질문
 
-`my.cnf`와 `mysqld-auto.cnf`에 같은 시스템 변수가 서로 다른 값으로 설정돼 있으면 재시작 후 어떤 값이 적용되나요?
+`my.cnf`에서 `max_connections=200`으로 바꿔 재시작했는데 실제값이 500이라면, 원인을 확인하기 위해 어떤 값과 설정 출처를 어디서 조회하겠어요?

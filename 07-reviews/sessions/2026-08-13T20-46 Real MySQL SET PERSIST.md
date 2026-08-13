@@ -34,6 +34,10 @@ updated: 2026-08-13
 >
 > my.cnf에 있는 모든 변수 정리해둘것
 
+## 설정 우선순위 질문 답변 원문
+
+> mysqld-auto.cnf에 있는값으로 변경되지 않을까? set persist 한 값이 거기로 저장된거니까
+
 ## 생성하거나 수정한 노트
 
 - [[02-2.4 SET과 영속 시스템 변수]]
@@ -54,14 +58,14 @@ updated: 2026-08-13
 
 ## level 변경과 근거
 
-level 1 → 2. runtime `SET`의 수명과 `SET PERSIST → mysqld-auto.cnf → restart 적용` 상태 전이를 자신의 말로 설명했다. 동일 변수가 여러 설정 출처에 있을 때의 precedence는 아직 설명하지 않았다.
+level 2 유지. runtime `SET`의 수명과 `SET PERSIST → mysqld-auto.cnf → restart 적용`에 이어, 같은 변수가 충돌하면 persisted 값이 적용된다는 이유를 자신의 말로 설명했다. 실패 증상에서 실제값과 설정 출처를 조회하는 방법은 아직 답하지 않았다.
 
 ## 미해결 질문
 
-- `my.cnf`와 persisted setting 충돌 시 최종값은 무엇인가?
+- `my.cnf`의 값과 실제 runtime 값이 다를 때 어떤 조회로 설정 출처를 찾는가?
 - `RESET PERSIST` 후 현재 runtime 값까지 원복하려면 무엇을 해야 하는가?
 - Docker image upgrade 시 container 내부 config와 persisted data volume은 어떻게 함께 이동하는가?
 
 ## 다음 세션 첫 질문
 
-`my.cnf`와 `mysqld-auto.cnf`에 같은 시스템 변수가 서로 다른 값으로 설정돼 있으면 재시작 후 어떤 값이 적용되나요?
+`my.cnf`에서 `max_connections=200`으로 바꿔 재시작했는데 실제값이 500이라면, 원인을 확인하기 위해 어떤 값과 설정 출처를 어디서 조회하겠어요?
