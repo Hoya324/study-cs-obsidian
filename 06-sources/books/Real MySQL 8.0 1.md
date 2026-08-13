@@ -32,6 +32,7 @@ connection·lock·index·buffer pool의 내부 동작과 지표가 필요할 때
 ## 읽기 진행
 
 - [[01-1.2 왜 MySQL인가]] — DBMS 선택 기준: 안정성 → 성능과 기능 → 커뮤니티와 인지도
+- [[02-2.2.3 서버 연결 테스트]] — host와 protocol에 따른 Unix domain socket·TCP/IP 선택
 
 ## 완료 증거
 
