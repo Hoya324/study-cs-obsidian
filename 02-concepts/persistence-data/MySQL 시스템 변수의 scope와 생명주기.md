@@ -21,7 +21,7 @@ updated: 2026-08-13
 
 ## level 근거
 
-level 0 → 1. “MySQL 서버에 저장된 이런 값들은 시스템 변수”라고 정의했고, GLOBAL·SESSION scope와 dynamic·static 구분을 스스로 열거했다. 아직 새 connection의 SESSION 초기화 과정을 자기 말로 설명한 증거는 없다.
+level 0 → 1. “MySQL 서버에 저장된 이런 값들은 시스템 변수”라고 정의했고, GLOBAL·SESSION scope와 dynamic·static 구분을 스스로 열거했다. 이어 “커넥션이 만들어지는 순간부터 해당 커넥션에서만 유효”하다고 SESSION의 수명을 연결했다. 아직 현재 GLOBAL 값이 새 SESSION으로 복사되고 기존 SESSION에는 소급되지 않는 과정을 자기 말로 설명하지 않아 level 1을 유지한다.
 
 ## 한 문장 정의
 
@@ -43,6 +43,8 @@ GLOBAL 값을 바꿨는데 기존 connection의 동작이 바뀌지 않거나, r
 4. `SET SESSION`은 현재 connection 값만 바꾼다.
 5. connection이 닫히면 그 SESSION 값도 사라진다.
 6. runtime 변경은 별도로 persist하지 않으면 서버 재시작 때 사라진다.
+
+`Scope`, startup 설정 가능 여부, `Dynamic`은 독립 속성이다. 일반적으로 `Both` 변수의 GLOBAL 값이 SESSION 기본값 역할을 하지만, 최신 MySQL 8.0에는 `Scope: Session`이면서 command line·option file로 기본값을 지정할 수 있는 예외도 있다. 따라서 scope만으로 설정 경로를 추론하지 않고 변수 reference의 각 열을 함께 확인한다.
 
 ## 소비하는 리소스
 
@@ -79,6 +81,7 @@ GLOBAL 값을 바꿨는데 기존 connection의 동작이 바뀌지 않거나, r
 - [[요청이 소비하는 리소스]]
 - [[관측 가능성]]
 - [[장애 복구]]
+- [[InnoDB 버퍼 풀과 MyISAM 키 캐시는 무엇인가]]
 
 ## 내 프로젝트 사례
 
