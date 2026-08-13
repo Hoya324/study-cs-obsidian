@@ -26,3 +26,11 @@ Markdown과 Properties가 원본이고 Canvas는 같은 내용을 보여주는 �
 ```bash
 python3 scripts/validate_vault.py backend-cs-vault
 ```
+
+초기 구축 검증 결과(2026-08-13):
+
+- Python 회귀 테스트 16개 통과
+- frontmatter, 내부 링크, Canvas JSON·파일 대상·동명 Markdown·node 겹침 검사 통과
+- 최상위 Canvas와 대표 영역 Canvas의 실제 PNG 렌더링 확인
+- 잘린 제목, 겹친 card, 색상에만 의존한 구분 없음
+- Obsidian 1.13.7의 핵심 기능만 사용하며 community plugin 의존성 없음

@@ -5,7 +5,7 @@
       "type": "text",
       "x": 0,
       "y": 0,
-      "width": 240,
+      "width": 230,
       "height": 100,
       "text": "## 요구사항·클라이언트",
       "color": "5"
@@ -13,9 +13,9 @@
     {
       "id": "stage-2",
       "type": "text",
-      "x": 290,
+      "x": 340,
       "y": 0,
-      "width": 240,
+      "width": 230,
       "height": 100,
       "text": "## 네트워크·엣지",
       "color": "5"
@@ -23,9 +23,9 @@
     {
       "id": "stage-3",
       "type": "text",
-      "x": 580,
+      "x": 680,
       "y": 0,
-      "width": 240,
+      "width": 230,
       "height": 100,
       "text": "## Linux·JVM·Tomcat",
       "color": "5"
@@ -33,9 +33,9 @@
     {
       "id": "stage-4",
       "type": "text",
-      "x": 870,
+      "x": 1020,
       "y": 0,
-      "width": 240,
+      "width": 230,
       "height": 100,
       "text": "## Spring 애플리케이션",
       "color": "5"
@@ -43,9 +43,9 @@
     {
       "id": "stage-5",
       "type": "text",
-      "x": 1160,
+      "x": 1360,
       "y": 0,
-      "width": 240,
+      "width": 230,
       "height": 100,
       "text": "## DB·Redis·외부 시스템",
       "color": "5"
@@ -53,9 +53,9 @@
     {
       "id": "stage-6",
       "type": "text",
-      "x": 1450,
+      "x": 1700,
       "y": 0,
-      "width": 240,
+      "width": 230,
       "height": 100,
       "text": "## 응답·오류",
       "color": "5"
@@ -63,9 +63,9 @@
     {
       "id": "stage-7",
       "type": "text",
-      "x": 1740,
+      "x": 2040,
       "y": 0,
-      "width": 240,
+      "width": 230,
       "height": 100,
       "text": "## 운영 관측",
       "color": "5"

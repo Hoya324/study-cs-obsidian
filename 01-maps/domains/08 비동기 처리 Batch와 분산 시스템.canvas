@@ -13,7 +13,7 @@
     {
       "id": "branch-1",
       "type": "text",
-      "x": 600,
+      "x": 720,
       "y": 0,
       "width": 400,
       "height": 100,
@@ -23,7 +23,7 @@
     {
       "id": "branch-2",
       "type": "text",
-      "x": 600,
+      "x": 720,
       "y": 140,
       "width": 400,
       "height": 100,
@@ -33,7 +33,7 @@
     {
       "id": "branch-3",
       "type": "text",
-      "x": 600,
+      "x": 720,
       "y": 280,
       "width": 400,
       "height": 100,
@@ -43,7 +43,7 @@
     {
       "id": "branch-4",
       "type": "text",
-      "x": 600,
+      "x": 720,
       "y": 420,
       "width": 400,
       "height": 100,
@@ -53,7 +53,7 @@
     {
       "id": "branch-5",
       "type": "text",
-      "x": 600,
+      "x": 720,
       "y": 560,
       "width": 400,
       "height": 100,
@@ -63,7 +63,7 @@
     {
       "id": "branch-6",
       "type": "text",
-      "x": 600,
+      "x": 720,
       "y": 700,
       "width": 400,
       "height": 100,
@@ -73,7 +73,7 @@
     {
       "id": "branch-7",
       "type": "text",
-      "x": 600,
+      "x": 720,
       "y": 840,
       "width": 400,
       "height": 100,
