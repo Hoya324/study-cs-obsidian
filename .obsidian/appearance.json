@@ -1,0 +1,9 @@
+{
+  "accentColor": "#4f7cff",
+  "baseFontSize": 17,
+  "enabledCssSnippets": [
+    "backend-cs-readable"
+  ],
+  "nativeMenus": true,
+  "theme": "system"
+}

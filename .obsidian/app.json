@@ -1,0 +1,11 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "assets",
+  "livePreview": true,
+  "newFileFolderPath": "03-questions/diagnostic",
+  "newFileLocation": "folder",
+  "readableLineLength": true,
+  "showLineNumber": true,
+  "strictLineBreaks": false,
+  "useMarkdownLinks": false
+}

@@ -1,0 +1,30 @@
+filters:
+  and:
+    - file.hasProperty("status")
+    - '!file.inFolder("08-templates")'
+views:
+  - type: table
+    name: 전체 학습 현황
+    order:
+      - file.name
+      - type
+      - domains
+      - status
+      - level
+      - confidence
+      - updated
+    sort:
+      - property: status
+        direction: ASC
+      - property: level
+        direction: ASC
+  - type: table
+    name: 학습 중
+    filters:
+      and:
+        - 'status == "learning"'
+    order:
+      - file.name
+      - domains
+      - level
+      - next_review

@@ -1,0 +1,61 @@
+:root {
+  --backend-cs-prose-width: 860px;
+}
+
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-preview-view .markdown-preview-sizer {
+  line-height: 1.72;
+  max-width: var(--backend-cs-prose-width);
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3 {
+  line-height: 1.3;
+  scroll-margin-top: 2rem;
+}
+
+.markdown-rendered p,
+.markdown-rendered li {
+  max-width: 78ch;
+}
+
+.markdown-rendered a:not(.tag),
+.cm-hmd-internal-link {
+  text-underline-offset: 0.16em;
+}
+
+:is(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 3px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+
+.callout[data-callout="question"] {
+  --callout-icon: circle-help;
+  border-inline-start-width: 5px;
+}
+
+.canvas-node-content {
+  line-height: 1.45;
+}
+
+@media (max-width: 700px) {
+  body {
+    --font-text-size: 17px;
+  }
+
+  .markdown-source-view.mod-cm6 .cm-content,
+  .markdown-preview-view .markdown-preview-sizer {
+    line-height: 1.65;
+    padding-inline: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
