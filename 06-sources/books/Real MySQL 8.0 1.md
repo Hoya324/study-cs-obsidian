@@ -37,6 +37,7 @@ connection·lock·index·buffer pool의 내부 동작과 지표가 필요할 때
 - [[02-2.4.2 MySQL 시스템 변수의 특징]] — 다섯 속성과 GLOBAL·SESSION·Dynamic의 생명주기
 - [[02-2.4.3 글로벌 변수와 세션 변수]] — server 공유 cache와 connection별 설정의 scope 구분
 - [[02-2.4 SET과 영속 시스템 변수]] — runtime 변경, `mysqld-auto.cnf`, 설정 출처와 우선순위
+- [[02-2.4.6 my.cnf 파일 예시 해설]] — 운영 설정을 자원·내구성·관측·보안·복제 축으로 해석하고 8.0 후반 변경점 확인
 
 ## 완료 증거
 
