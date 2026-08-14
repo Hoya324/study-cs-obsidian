@@ -40,7 +40,8 @@ connection·lock·index·buffer pool의 내부 동작과 지표가 필요할 때
 - [[02-2.4.6 my.cnf 파일 예시 해설]] — 운영 설정을 자원·내구성·관측·보안·복제 축으로 해석하고 8.0 후반 변경점 확인
 - [[MySQL 외워둘 핵심 설정]] · [[MySQL 상황별 설정 점검표]] — 설정을 암기 우선순위와 운영 증상 기준으로 다시 탐색
 - [[03-3.1 사용자 식별]] — MySQL 계정의 `'user'@'host'` identity와 실제 선택 계정 확인
-- `04-아키텍쳐/` → [[4.1 MySQL 엔진 아키텍쳐]] — 장별 폴더와 큰 절별 canonical note에 원문·사진·보완·접힌 확인 질문을 누적
+- `04-아키텍쳐/` → [[4.1 MySQL 엔진 아키텍쳐]] — MySQL engine·thread·memory·query execution·thread pool·atomic DDL
+- `04-아키텍쳐/` → [[4.2 InnoDB 스토리지 엔진 아키텍쳐]] — clustered PK·foreign key·MVCC와 consistent read·locking read
 
 ## 완료 증거
 
