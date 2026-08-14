@@ -2,16 +2,16 @@
 type: source
 domains:
   - spring
-status: seed
-level: 0
-confidence: low
+status: learning
+level: 1
+confidence: medium
 prerequisites: []
 related_projects: []
 related_sources: []
-last_reviewed:
-next_review:
+last_reviewed: 2026-08-14
+next_review: 2026-08-17
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 # Spring 핵심 원리 기본편
 
@@ -23,6 +23,10 @@ updated: 2026-08-13
 ## 이 자료를 여는 조건
 
 진단에서 이 영역의 연결이 끊겼을 때 필요한 섹션만 선택한다.
+
+## 정리 노트
+
+- [[1.1 객체 지향 설계와 스프링]] — 스프링이란, 좋은 객체 지향 프로그래밍, 다형성과 역할·구현 분리
 
 ## 장·절 또는 섹션 찾기 규칙
 

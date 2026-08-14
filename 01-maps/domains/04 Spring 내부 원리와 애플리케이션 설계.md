@@ -1,16 +1,16 @@
 ---
 type: map
 domains: [spring]
-status: seed
-level: 0
-confidence: low
+status: learning
+level: 1
+confidence: medium
 prerequisites: [HTTP 요청과 응답, Java 스레드와 동시성]
 related_projects: [출석 보상 게임, 쿠폰 Batch, Excel Export, RAG 챗봇]
-related_sources: [토비의 Spring 6]
-last_reviewed:
-next_review:
+related_sources: [Spring 핵심 원리 기본편, 토비의 Spring 6]
+last_reviewed: 2026-08-14
+next_review: 2026-08-17
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 # 04 Spring 내부 원리와 애플리케이션 설계
 
@@ -29,7 +29,7 @@ HTTP를 애플리케이션 유스케이스로 바꾸고 DB·Redis·외부 시스
 - [[예외 처리와 오류 응답]]
 - [[테스트 전략]]
 - MVC 필터·인터셉터·ArgumentResolver
-- 객체 설계, 응집도와 의존성
+- [[1.1 객체 지향 설계와 스프링]] — 역할과 구현, 다형성, Spring DI의 출발점
 
 ## 연결
 

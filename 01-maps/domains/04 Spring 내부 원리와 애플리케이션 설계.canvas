@@ -79,6 +79,16 @@
       "height": 100,
       "text": "## 테스트 전략",
       "color": "1"
+    },
+    {
+      "id": "object-design-note",
+      "type": "file",
+      "x": 1280,
+      "y": 620,
+      "width": 520,
+      "height": 300,
+      "file": "06-sources/reading-notes/spring-core-basic/01-객체-지향-설계와-스프링/1.1 객체 지향 설계와 스프링.md",
+      "color": "6"
     }
   ],
   "edges": [
@@ -137,6 +147,14 @@
       "toNode": "branch-7",
       "toSide": "left",
       "label": "연결해 설명한다"
+    },
+    {
+      "id": "edge-object-design-note",
+      "fromNode": "branch-6",
+      "fromSide": "right",
+      "toNode": "object-design-note",
+      "toSide": "left",
+      "label": "역할과 구현·다형성"
     }
   ]
 }
