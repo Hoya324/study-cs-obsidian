@@ -9,10 +9,10 @@ confidence: low
 prerequisites: []
 related_projects: []
 related_sources: []
-last_reviewed: 2026-08-13
+last_reviewed: 2026-08-14
 next_review: 2026-08-14
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 ---
 # Real MySQL 8.0 1
 
@@ -42,6 +42,7 @@ connection·lock·index·buffer pool의 내부 동작과 지표가 필요할 때
 - [[03-3.1 사용자 식별]] — MySQL 계정의 `'user'@'host'` identity와 실제 선택 계정 확인
 - `04-아키텍쳐/` → [[4.1 MySQL 엔진 아키텍쳐]] — MySQL engine·thread·memory·query execution·thread pool·atomic DDL
 - `04-아키텍쳐/` → [[4.2 InnoDB 스토리지 엔진 아키텍쳐]] — clustered PK·foreign key·MVCC와 consistent read·locking read
+- `04-아키텍쳐/` → [[4.4 MySQL 로그 파일]] — 증상별 error·general·slow log 선택, live wait 조회와 `pt-query-digest` 분석 절차
 
 ## 완료 증거
 
