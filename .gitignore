@@ -3,3 +3,6 @@
 .obsidian/workspace-mobile.json
 .obsidian/cache/
 .trash/
+
+# 로컬 학습용 책 사진: 공개 GitHub에는 원본 페이지를 올리지 않음
+assets/book-photos/
